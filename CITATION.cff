@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "Styling Microsoft Power BI dashboards with TeX"
+message: "If you use this repository, please cite it using these metadata."
+type: software
+authors:
+  - given-names: Travis
+    family-names: Stenborg
+    orcid: "https://orcid.org/0000-0002-2693-9628"
+url: "https://github.com/tstenborg/tex-styling-power-bi"
+abstract: >-
+  "This repository holds digital assets associated with the article 'Styling \
+  Microsoft Power BI dashboards with TeX'. That article describes how TeX may \
+  be used in Power BI to style business intelligence dashboards. A gestational \
+  diabetes dataset was used to demonstrate both desktop, and cloud-based, \
+  TeX-styled dashboard rendering."
+keywords:
+  - matplotlib
+  - power-bi
+  - tex
+preferred-citation:
+  authors:
+    - given-names: Travis
+      family-names: Stenborg
+  doi: "10.47397/tb/46-1/tb142stenborg-powerbi"
+  end: 157 # Last page number.
+  issue: 1
+  journal: TUGboat
+  start: 156 # First page number.
+  title: "Styling Microsoft Power BI dashboards with TeX"
+  type: article
+  volume: 46
+  year: 2025
