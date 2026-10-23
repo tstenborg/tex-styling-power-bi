@@ -1,0 +1,109 @@
+# Styling Microsoft Power BI dashboards with TeX
+
+[![super-linter](../../actions/workflows/super-linter.yml/badge.svg)](../../actions/workflows/super-linter.yml) ![human-only code](https://img.shields.io/badge/human--only-code-white)
+
+This repository holds digital resources associated with the article "Styling
+Microsoft Power BI dashboards with TeX" [[1](#references)]. That article
+describes how TeX may be used in Power BI to style business intelligence
+dashboards. A gestational diabetes dataset was used to demonstrate both
+desktop, and cloud-based, TeX-styled dashboard rendering.
+
+---
+
+<figure>
+  <img src="assets/tex-styled-dashboard.png" alt="Power BI dashboard for a diabetes dataset." width="700">
+  <figcaption>Figure 1. TeX-styled Power BI dashboard for a gestational diabetes dataset.</figcaption>
+</figure>
+
+---
+
+## Table of Contents
+
+- [Key Files](#key-files)
+- [Software Requirements](#software-requirements)
+- [Getting Started](#getting-started)
+- [Quality Assurance](#quality-assurance)
+- [References](#references)
+- [Citation](#citation)
+
+## Key Files
+
+| File                          | Notes               |
+| :---------------------------- | :------------------ |
+| `src/GreyNeutralTheme.json`   | Power BI theme.     |
+| `src/TexStyledDashboard.pbix` | Power BI dashboard. |
+
+The Power BI dashboard holds native visuals and a Matplotlib scatterplot. An
+example gestational diabetes dataset is embedded. The scatterplot showcases
+TeX-styling visuals compatible with both local (Power BI Desktop) and online
+(Power BI) rendering. The accompanying, grey-based theme provides accessibility
+to colour-blind users.
+
+## Software Requirements
+
+| Software                   | Notes                                                                                                                                                              |
+| :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Power BI\*<br>&nbsp;       | [Details here](https://www.microsoft.com/en-au/power-platform/products/power-bi). Free and fee-based options available.<br>&nbsp;&nbsp;&nbsp;For online rendering. |
+| Power BI Desktop<br>&nbsp; | [Details here](https://www.microsoft.com/en-au/power-platform/products/power-bi/desktop). Free.<br>&nbsp;&nbsp;&nbsp;For local rendering.                          |
+| Python<br>&nbsp;           | [Available here](https://www.python.org/). Free.<br>&nbsp;&nbsp;&nbsp;For local rendering.                                                                         |
+
+\* The associated article [[1](#references)] refers to the "Power BI Service".
+At the time of publication, the Power BI Service was an independent service.
+It's now part of Microsoft Fabric and referred to as simply, "Power BI".
+
+### Python Configuration
+
+As the dashboard uses Python-enabled visuals, Power BI should be configured to
+execute Python. To do this, from the Power BI Desktop main menu, go to:
+
+- File -> Options and settings -> Options -> Global -> Python scripting.
+- Specify a valid path to the home directory of a Python installation.
+
+Please ensure the Python environment has the following packages installed:
+
+- matplotlib.
+- pandas.
+
+## Getting Started
+
+### Local Rendering
+
+For local dashboard rendering, open `TexStyledDashboard.pbix` with Power BI
+Desktop.
+
+### Online Rendering
+
+For online dashboard rendering, open `TexStyledDashboard.pbix` from Power BI.
+
+## Quality Assurance
+
+The repository code has been tested in the following environment.
+
+<details>
+<summary>Windows Test Environment</summary>
+
+<br>
+
+| Type            | Component        | Version                                |
+| :-------------- | :--------------- | :------------------------------------- |
+| Platform        | Operating system | Windows 11, 26H2 (OS Build 26300.9711) |
+| Software        | Power BI Desktop | 2.157.1354.0                           |
+| &quot;          | Python           | 3.14.9                                 |
+| Python Packages | matplotlib       | 3.11.2                                 |
+| &quot;          | pandas           | 3.0.6                                  |
+
+</details>
+
+## References
+
+1. T. Stenborg, "Styling Microsoft Power BI dashboards with TeX", _TUGboat_,
+   vol. 46, no. 1, pp. 156&ndash;157, Apr. 2025, doi:
+   10.47397/tb/46-1/tb142stenborg-powerbi.\
+   [View PDF](https://tug.org/TUGboat/tb46-1/tb142stenborg-powerbi.pdf) &nbsp;
+   [View at publisher](https://tug.org/TUGboat/tb46-1/tb142stenborg-powerbi.html)
+   &nbsp; [SciX](https://scixplorer.org/abs/2025TUGbt..46..156S/abstract)
+
+## Citation
+
+Citation details are available by clicking **Cite this repository** in the
+GitHub sidebar.
